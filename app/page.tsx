@@ -18,7 +18,7 @@ export default function Home() {
                 s&apos;accepten pull requests.
             </p>
 
-            <ol className="mt-8" start="0">
+            <ol className="mt-8" start={0}>
                 <li>
                     <Link href="00-linux">Introducció a Linux</Link>
                 </li>
