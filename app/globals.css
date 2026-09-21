@@ -39,10 +39,10 @@ h1 + h2 {
     @apply mt-4;
 }
 h2 {
-    @apply text-lg font-semibold mb-2 mt-8;
+    @apply text-xl font-semibold mb-2 mt-8;
 }
 h3 {
-    @apply font-semibold mb-2 mt-8;
+    @apply font-semibold mb-2 mt-4;
 }
 h3 + pre {
     @apply mt-2;
