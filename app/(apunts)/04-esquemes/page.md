@@ -30,7 +30,7 @@ Exemples de cerques:
 -   Cap element és negatiu (o compleix una condició).
 -   Com a màxim hi ha 5 repeticions seguides d'un element.
 
-És molt útil, un cop s'han fet problems de diferents tipus, repassar l'argument
+És molt útil, un cop s'han fet problemes de diferents tipus, repassar l'argument
 de perquè són d'un tipus o d'un altre, i poder fer un anàlisi ràpid.
 
 ## Un recorregut és un càlcul sobre una seqüència que requereix processar _tots_ els elements
@@ -77,7 +77,7 @@ while (n > 0) {     // Últim element = 0
 cout << suma << endl;
 ```
 
-## Una cerca és una càlcul sobre una seqüència en el qual podem donar el resultat _sense haver vist tots els elements_
+## Una cerca és un càlcul sobre una seqüència en el qual podem donar el resultat _sense haver vist tots els elements_
 
 Tots els problemes de tipus "cerca" tenen un codi genèric com el següent:
 
@@ -100,11 +100,11 @@ exemple, si busquem divisor per determinar si un nombre és primer, llavors pode
 posar `es_primer` en compte de `trobat` i començar a `true` en comptes de
 `false`.
 
-Però... perquè hi ha un `if-else` en la part de comprobar la condició i la
+Però... perquè hi ha un `if-else` en la part de comprovar la condició i la
 obtenció del següent element es fa al `else`?? És important veure que quan fem
 una cerca, ens pot interessar saber a quina posició o qui era l'element cercat.
 Si volem mantenir les coses com estaven quan l'hem trobat, no hem de llegir cap
-més element, hem de passar directmanent a fora del bucle. Per aconseguir-ho, és
+més element, hem de passar directamnent a fora del bucle. Per aconseguir-ho, és
 important posar aquest `else`.
 
 Apliquem l'esquema a determinar si un enter té la xifra 9:
@@ -114,7 +114,7 @@ int n;
 cin >> n;
 bool te_un_9 = false;
 while (!te_un_9 && n > 0) {
-    if (n % 1 == 9) {
+    if (n % 10 == 9) {
         te_un_9 = true;
     } else {
         n /= 10;
@@ -122,7 +122,7 @@ while (!te_un_9 && n > 0) {
 }
 ```
 
-En aquest cas, el fet de posar `else` en la obtenció del següent element ens
+En aquest cas, el fet de posar `else` en l'obtenció del següent element ens
 permet tenir el valor de `n` en el moment que hem vist la xifra 9. Si no hi fos,
 passariem al següent valor i el 9 es perdria.
 

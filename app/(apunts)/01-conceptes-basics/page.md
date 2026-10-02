@@ -57,7 +57,7 @@ Hola desde PRO1!
 
 ## Els tipus bàsics son els enters, reals, booleans, caràcters i cadenes de caràcters
 
-Un programa, realment, és un procés automàtic que transforma dades que li posem a l'entrada en uns resultats que produeix a la sortda.
+Un programa, realment, és un procés automàtic que transforma dades que li posem a l'entrada en uns resultats que produeix a la sortida.
 
 ![Diagrama d'un programa](entrada-sortida.opt.svg)
 
@@ -171,7 +171,7 @@ Els operadors disponibles per operar amb valors dels tipus bàsics són aquests:
 | Relacionals      | `<`, `>`, `<=`, `>=` |
 | Relacionals (eq) | `==`, `!=`           |
 | Conjunció        | `and`, `&&`          |
-| Disjunció        | `or`, `              |     | `   |
+| Disjunció        | `or`, `\|\|` |
 
 Els operadors aritmètics `+`, `-`, `*` i `/` son els coneguts.
 

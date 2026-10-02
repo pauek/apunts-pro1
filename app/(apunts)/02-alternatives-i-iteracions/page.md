@@ -19,7 +19,7 @@ string tipus; // "senar" o "parell"
               // segons ho sigui `a`
 ```
 
-si el que volem és que `tipus` sigui `"parell"` o `"senar"` segons la variable `a`, només ho podríem resoldre fent una assignació `tipus = "parell"` en un cas i `tipus = "parell"` en un altre! Com fem això??
+si el que volem és que `tipus` sigui `"parell"` o `"senar"` segons la variable `a`, només ho podríem resoldre fent una assignació `tipus = "parell"` en un cas i `tipus = "senar"` en un altre! Com fem això??
 
 
 ## Un `if` permet executar una instrucció només si es compleix una condició
@@ -258,7 +258,7 @@ if (vegades < 100) {
 }
 ```
 
-amb el següent plantejament: la variable `vegades` comptarà les vegades que hem escrit per pantalla la frase demanada, i cada cop que l'escrivim per la sortda, incrementem la variable `vegades` en una unitat. Però es clar, aquest programa només mostrarà la frase una vegada, perquè l'`if`, un cop executat el bloc, continua amb el programa (i en el nostre cas, s'acaba).
+amb el següent plantejament: la variable `vegades` comptarà les vegades que hem escrit per pantalla la frase demanada, i cada cop que l'escrivim per la sortida, incrementem la variable `vegades` en una unitat. Però es clar, aquest programa només mostrarà la frase una vegada, perquè l'`if`, un cop executat el bloc, continua amb el programa (i en el nostre cas, s'acaba).
 
 El que necessitem és una manera de **tornar enrere** i re-examinar la condició (`vegades < 100`). Si la variable `vegades` és 1 quan haguem mostrat la frase un cop, la condició seguirà sent certa, perquè `vegades < 100` es compleix. Es deixarà de complir quan haguem fet tota la feina! De fet, necessitem anar executant el bloc **mentre** la condició sigui certa.
 
@@ -335,7 +335,7 @@ Utilitzant això podem fer un programa que obté dia, mes i any de l'enter `data
 int data = 20250301;
 
 int dia = data % 100;        // 2 últims dígits
-int mes = (data / 100) % 100 // 2 dígits del mig
+int mes = (data / 100) % 100; // 2 dígits del mig
 int any = data / 10000;      // 4 primers dígits
 
 cout << dia << '/' << mes << '/' << any << endl;
@@ -441,7 +441,7 @@ while (!primer && d < N) {
 }
 ```
 
-Una pregunta: se t'acud perquè hem posat el `d++` en el `else`? Ho veurem amb més detall al tema de seqüències i esquemes algorísmics.
+Una pregunta: se t'acut perquè hem posat el `d++` en el `else`? Ho veurem amb més detall al tema de seqüències i esquemes algorísmics.
 
 
 ## En una parella de divisors de $N$, el més petit no pot superar $\sqrt{N}$
@@ -594,8 +594,9 @@ Cada crida fa servir el nom de la funció, seguit dels valors que volem donar al
   int max2(int a, int b) {
       return (a > b ? a : b);
   }
+  ```
 
-- Una funció que calcula el màxima de 3 enters (utilitzant `max2`!):
+- Una funció que calcula el màxim de 3 enters (utilitzant `max2`!):
 
     ```c++
     int max3(int a, int b, int c) {

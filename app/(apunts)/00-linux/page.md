@@ -59,17 +59,18 @@ de la comanda `ls` es poden consultar amb `ls --help`.
     directori actual i a l'anterior. Més informació a [l'estructura de
     directoris de Linux](#estructura-de-directoris).
 
+- `-l`: Ens mostra més informació dels diferents arxius.
     ```bash
     $ ls -l
     total 1
-    drwxr-xr-x. 1 iker iker  14 21 de set.  09:15 file1.c
-    drwxr-xr-x. 1 iker iker  14 21 de set.  09:18 file2.c
+    -rw-r-xr-x. 1 iker iker  14 21 de set.  09:15 file1.c
+    -rw-r-xr-x. 1 iker iker  14 21 de set.  09:18 file2.c
     ```
 
     El significat de la sortida d'aquesta comanda escapa de l'objectiu d'aquesta
     assignatura (es veurà a SO, Sistemes Operatius, una assignatura del Q3).
 
-- `-la` (`--long` + `--all`): És una combinació de _long_, que mostra més
+- `-la` (`-l` + `--all`): És una combinació de _long_, que mostra més
   informació sobre cada entrada del directori, i la opció `-a` anterior.
 
     ```bash
@@ -77,8 +78,8 @@ de la comanda `ls` es poden consultar amb `ls --help`.
     total 1
     drwxr-xr-x. 1 iker iker 228 21 de set.  08:21 .
     drwxr-xr-x. 1 iker iker 104 21 de set.  08:25 ..
-    drwxr-xr-x. 1 iker iker  14 21 de set.  09:21 file1.c
-    drwxr-xr-x. 1 iker iker  14 21 de set.  09:18 file2.c
+    -rw-r-xr-x. 1 iker iker  14 21 de set.  09:21 file1.c
+    -rw-r-xr-x. 1 iker iker  14 21 de set.  09:18 file2.c
     ```
 
 ## Estructura de directoris

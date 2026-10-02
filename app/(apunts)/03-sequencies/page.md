@@ -46,6 +46,7 @@ while (c != '.') {
         c = char(int(c) - 32);
     }
     cout << c;
+    cin >> c;
 }
 cout << endl;
 ```
@@ -60,6 +61,7 @@ char c;
 cin >> c;
 while (c != '.') {
     cout << funcio(c);
+    cin >> c;
 }
 cout << endl;
 ```
@@ -247,7 +249,7 @@ del programa quina és la intenció del programador.
 
 **`while`**: es fa servir amb a seqüències amb número d'elements
 desconegut, o bé quan la condició d'acabament del
-`while és llarga i complexa de llegir (i per tant faria el `for`massa complicat). Per altra banda, es fa servir`while`
+`while` és llarga i complexa de llegir (i per tant faria el `for`massa complicat). Per altra banda, es fa servir`while`
 també si la iteració no avança amb un simple increment sinó que
 fa una lectura o un càlcul més complex per passar al següent
 element.
@@ -471,7 +473,7 @@ for (int i = 0; i < N; i++) {
 ```c++
 // inicialització
 cin >> element;
-while (elemement != VALOR_SENTINELLA) {
+while (element != VALOR_SENTINELLA) {
     // processar element
     cin >> element;
 }
